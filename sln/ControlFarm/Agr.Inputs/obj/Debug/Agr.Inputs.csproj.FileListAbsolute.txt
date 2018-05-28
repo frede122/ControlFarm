@@ -1,0 +1,5 @@
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\bin\Debug\Agr.Inputs.dll
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\bin\Debug\Agr.Inputs.pdb
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\obj\Debug\Agr.Inputs.csprojResolveAssemblyReference.cache
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\obj\Debug\Agr.Inputs.dll
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\obj\Debug\Agr.Inputs.pdb
