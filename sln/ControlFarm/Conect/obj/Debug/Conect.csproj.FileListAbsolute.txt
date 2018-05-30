@@ -4,3 +4,8 @@ C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln
 C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Conect\bin\Debug\MySql.Data.dll
 C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Conect\obj\Debug\Conect.dll
 C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Conect\obj\Debug\Conect.pdb
+C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Conect\bin\Debug\Conect.dll
+C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Conect\bin\Debug\Conect.pdb
+C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Conect\obj\Debug\Conect.csprojResolveAssemblyReference.cache
+C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Conect\obj\Debug\Conect.dll
+C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Conect\obj\Debug\Conect.pdb

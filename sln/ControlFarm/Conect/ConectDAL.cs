@@ -23,7 +23,9 @@ namespace Conect
 		
 		public MySqlConnection conectionMysql{get; set;}
 		public MySqlCommand comand;
+		public MySqlCommandBuilder cb;
 		string stringconection = "server=localhost;database=controlfarm;uid=root;pwd=''";
+		
 		private string conection;
 		private string comandsql;
 		public string Conection{
@@ -49,6 +51,7 @@ namespace Conect
 			
 			
 		}
+		
 		public void Write(ConectDAL ConectDAL){
 			try {
 				//this.Conect(ConectDAL);
@@ -69,12 +72,14 @@ namespace Conect
 			MySqlDataReader leitor = comand.ExecuteReader();
 			return leitor;
 		}
-		
-		
-		public MySqlDataAdapter VerBSource(ConectDAL dal){
-			Conect();
-			MySqlDataAdapter da = new MySqlDataAdapter(comand);	
-			return da;	
+				
+		public DataTable MySqlDA(ConectDAL dal){
+			this.Conect();
+			DataTable dataTableBD = new DataTable();
+			MySqlDataAdapter da = new MySqlDataAdapter(dal.ComandSql, conectionMysql);	
+			cb = new MySqlCommandBuilder(da);
+			da.Fill(dataTableBD);
+			return dataTableBD;	
 			
 		}
 	}

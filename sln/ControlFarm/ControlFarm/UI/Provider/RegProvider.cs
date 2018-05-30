@@ -19,28 +19,49 @@ namespace ControlFarm.UI.Provider
 	/// </summary>
 	public partial class RegProvider : Form
 	{
-		public RegProvider()
+		
+		public RegProvider(ProviderDTO dtoProvider = null)
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			if( dtoProvider != null){
+				textBoxAdress.Text = dtoProvider.Address;
+				textBoxCity.Text = dtoProvider.City;
+				textBoxCNPJ.Text = dtoProvider.Cpnj.ToString();
+				textBoxName.Text = dtoProvider.Name;
+				textBoxPhone.Text = dtoProvider.Phone.ToString();
+				textBoxID.Text = dtoProvider.IdProvider.ToString();				
+			}
 			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		ProviderBLL bll = new ProviderBLL();
-		ProviderDTO dto = new ProviderDTO();
+		ProviderBLL bll;
+		ProviderDTO dto;
 		void ButtonGravarClick(object sender, EventArgs e)
 		{
+			bll = new ProviderBLL();
+			dto = new ProviderDTO();
 			dto.Address = textBoxAdress.Text;
 			dto.City = textBoxCity.Text;
 			dto.Cpnj = double.Parse(textBoxCNPJ.Text);
 			dto.Name = textBoxName.Text;
-			dto.Phone = int.Parse(textBoxPhone.Text);
-			bll.save(dto);
+			dto.Phone = int.Parse(textBoxPhone.Text);		
+			if(textBoxID.Text == ""){
+				bll.Save(dto);
+			}else{
+				dto.IdProvider = int.Parse(textBoxID.Text);
+				bll.Update(dto);
+			}
+			this.Close();
 				
+		}
+		void ButtonCancelarClick(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }

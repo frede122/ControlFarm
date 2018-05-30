@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Provider.DTO;
 using Provider.BLL;
+using ControlFarm.UI.Provider;
 
 namespace ControlFarm
 {
@@ -20,7 +21,7 @@ namespace ControlFarm
 	/// </summary>
 	public partial class MainForm : Form
 	{
-
+		ListUpdateProvider provider;
 		public MainForm()
 		{
 			//
@@ -31,6 +32,25 @@ namespace ControlFarm
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+		}
+		void ButtonTesteClick(object sender, EventArgs e)
+		{
+			
+		}
+		void ArquivoToolStripMenuItemClick(object sender, EventArgs e)
+		{
+	
+		}
+		void FuncionarioToolStripMenuItemClick(object sender, EventArgs e)
+		{   MainForm mf = new MainForm();
+			provider = new ListUpdateProvider();
+			provider.MdiParent = this;
+			provider.Show();
+			provider = null;
+		}
+		void SairToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }

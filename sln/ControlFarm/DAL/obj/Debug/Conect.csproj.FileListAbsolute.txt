@@ -1,6 +1,0 @@
-C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\DAL\bin\Debug\Conect.dll
-C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\DAL\bin\Debug\Conect.pdb
-C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\DAL\bin\Debug\MySql.Data.dll
-C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\DAL\obj\Debug\Conect.csprojResolveAssemblyReference.cache
-C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\DAL\obj\Debug\Conect.dll
-C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\DAL\obj\Debug\Conect.pdb

@@ -14,6 +14,12 @@ namespace ControlFarm
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -36,16 +42,79 @@ namespace ControlFarm
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.arquivoToolStripMenuItem,
+			this.cadastroToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(934, 24);
+			this.menuStrip1.TabIndex = 1;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// arquivoToolStripMenuItem
+			// 
+			this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.abrirToolStripMenuItem,
+			this.sairToolStripMenuItem});
+			this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+			this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+			this.arquivoToolStripMenuItem.Text = "Arquivo";
+			this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.ArquivoToolStripMenuItemClick);
+			// 
+			// abrirToolStripMenuItem
+			// 
+			this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+			this.abrirToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+			this.abrirToolStripMenuItem.Text = "abrir";
+			// 
+			// sairToolStripMenuItem
+			// 
+			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+			this.sairToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+			this.sairToolStripMenuItem.Text = "Sair";
+			this.sairToolStripMenuItem.Click += new System.EventHandler(this.SairToolStripMenuItemClick);
+			// 
+			// cadastroToolStripMenuItem
+			// 
+			this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.funcionarioToolStripMenuItem});
+			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+			this.cadastroToolStripMenuItem.Text = "Cadastro";
+			// 
+			// funcionarioToolStripMenuItem
+			// 
+			this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
+			this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+			this.funcionarioToolStripMenuItem.Text = "Funcionario";
+			this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.FuncionarioToolStripMenuItemClick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 262);
+			this.ClientSize = new System.Drawing.Size(934, 512);
+			this.Controls.Add(this.menuStrip1);
+			this.IsMdiContainer = true;
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "ControlFarm";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 	}
