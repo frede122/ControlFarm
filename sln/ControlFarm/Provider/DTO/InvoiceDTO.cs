@@ -22,8 +22,7 @@ namespace Provider.DTO
 		}
 		private int idInvoice;
 		private int invoice;
-		private int idInvoice_idProvider;
-		private float amount;
+		private decimal amount;
 		public int IdInvoice{
 			get {return idInvoice;}
 			set {idInvoice = value;}
@@ -32,11 +31,7 @@ namespace Provider.DTO
 			get {return invoice;}
 			set {invoice = value;}
 		}
-		public int IdInvoice_IdProvider{
-			get {return idInvoice_idProvider;}
-			set {idInvoice_idProvider = value;}		
-		}
-		public float Amount{
+		public decimal Amount{
 			get {return amount;}
 			set {amount = value;}				
 		}

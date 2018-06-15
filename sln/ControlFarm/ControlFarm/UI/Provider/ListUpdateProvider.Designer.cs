@@ -85,19 +85,22 @@ namespace ControlFarm.UI.Provider
 			// 
 			// dataGridViewProvider
 			// 
-			this.dataGridViewProvider.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+			this.dataGridViewProvider.AllowUserToOrderColumns = true;
+			this.dataGridViewProvider.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.dataGridViewProvider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.dataGridViewProvider.ColumnHeadersHeight = 40;
 			this.dataGridViewProvider.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewProvider.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewProvider.EnableHeadersVisualStyles = false;
-			this.dataGridViewProvider.GridColor = System.Drawing.SystemColors.ActiveCaption;
+			this.dataGridViewProvider.GridColor = System.Drawing.SystemColors.Control;
 			this.dataGridViewProvider.Location = new System.Drawing.Point(0, 0);
 			this.dataGridViewProvider.Name = "dataGridViewProvider";
 			this.dataGridViewProvider.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.dataGridViewProvider.Size = new System.Drawing.Size(866, 379);
+			this.dataGridViewProvider.Size = new System.Drawing.Size(864, 379);
 			this.dataGridViewProvider.TabIndex = 3;
 			this.dataGridViewProvider.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewProviderCellClick);
 			this.dataGridViewProvider.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewProviderCellValueChanged);
+			this.dataGridViewProvider.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.DataGridViewProviderUserDeletedRow);
 			// 
 			// splitContainer1
 			// 
@@ -116,7 +119,7 @@ namespace ControlFarm.UI.Provider
 			// 
 			this.splitContainer1.Panel2.Controls.Add(this.label1);
 			this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.splitContainer1.Size = new System.Drawing.Size(866, 491);
+			this.splitContainer1.Size = new System.Drawing.Size(864, 492);
 			this.splitContainer1.SplitterDistance = 425;
 			this.splitContainer1.TabIndex = 4;
 			// 
@@ -134,7 +137,7 @@ namespace ControlFarm.UI.Provider
 			// splitContainer2.Panel2
 			// 
 			this.splitContainer2.Panel2.Controls.Add(this.dataGridViewProvider);
-			this.splitContainer2.Size = new System.Drawing.Size(866, 425);
+			this.splitContainer2.Size = new System.Drawing.Size(864, 425);
 			this.splitContainer2.SplitterDistance = 42;
 			this.splitContainer2.TabIndex = 0;
 			// 
@@ -154,7 +157,7 @@ namespace ControlFarm.UI.Provider
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
 			this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-			this.toolStrip1.Size = new System.Drawing.Size(866, 39);
+			this.toolStrip1.Size = new System.Drawing.Size(864, 39);
 			this.toolStrip1.TabIndex = 6;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
@@ -172,9 +175,9 @@ namespace ControlFarm.UI.Provider
 			this.editStripButton.Image = ((System.Drawing.Image)(resources.GetObject("editStripButton.Image")));
 			this.editStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.editStripButton.Name = "editStripButton";
-			this.editStripButton.Size = new System.Drawing.Size(126, 36);
+			this.editStripButton.Size = new System.Drawing.Size(111, 36);
 			this.editStripButton.Tag = "";
-			this.editStripButton.Text = "Editar Tabela     ";
+			this.editStripButton.Text = "Editar Tabela";
 			this.editStripButton.Click += new System.EventHandler(this.ButtonEditTableClick);
 			// 
 			// deleteStripButton
@@ -263,8 +266,9 @@ namespace ControlFarm.UI.Provider
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(866, 491);
+			this.ClientSize = new System.Drawing.Size(864, 492);
 			this.Controls.Add(this.splitContainer1);
+			this.MinimumSize = new System.Drawing.Size(800, 500);
 			this.Name = "ListUpdateProvider";
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

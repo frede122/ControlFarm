@@ -20,7 +20,9 @@ namespace ControlFarm.UI.Provider
 	/// </summary>
 	public partial class ListUpdateProvider : Form
 	{
-		ProviderBLL bllProvider = new ProviderBLL();
+		//ProviderBLL bllProv = new ProviderBLL();
+		ProviderBLL bllProv = new ProviderBLL();
+		ProviderDTO dtoProv = new ProviderDTO();
 		public ListUpdateProvider()
 		{
 			//
@@ -33,10 +35,9 @@ namespace ControlFarm.UI.Provider
 			//
 		}
 		public void LoadTable(){
-			dataGridViewProvider.DataSource = bllProvider.DataGridReturn();
+			dataGridViewProvider.DataSource = bllProv.DataGridReturn();
 		}
-		ProviderBLL bllProv = new ProviderBLL();
-		ProviderDTO dtoProv = new ProviderDTO();
+		
 		void DataGridViewProviderCellValueChanged(object sender, DataGridViewCellEventArgs e)
 		{
 			
@@ -45,13 +46,15 @@ namespace ControlFarm.UI.Provider
 					if(dataGridViewProvider.Rows[e.RowIndex].Cells[0].Value.ToString() != ""){
 					dtoProv.IdProvider = int.Parse(dataGridViewProvider.Rows[e.RowIndex].Cells[0].Value.ToString());
 					dtoProv.Name = dataGridViewProvider.Rows[e.RowIndex].Cells[1].Value.ToString();
-					dtoProv.Cpnj = double.Parse(dataGridViewProvider.Rows[e.RowIndex].Cells[2].Value.ToString());
+					dtoProv.Cpnj = dataGridViewProvider.Rows[e.RowIndex].Cells[2].Value.ToString();
 					dtoProv.Address = dataGridViewProvider.Rows[e.RowIndex].Cells[3].Value.ToString();
 					dtoProv.City = dataGridViewProvider.Rows[e.RowIndex].Cells[4].Value.ToString();
-					dtoProv.Phone = int.Parse(dataGridViewProvider.Rows[e.RowIndex].Cells[5].Value.ToString());
-					bllProv.Update(dtoProv);
-					
+					dtoProv.Phone = dataGridViewProvider.Rows[e.RowIndex].Cells[5].Value.ToString();
+					bllProv.Update(dtoProv);					
 				}
+				LoadTable();				
+			}else{
+				LoadTable();
 			}
 		}
 		void ButtonEditTableClick(object sender, EventArgs e)
@@ -63,15 +66,17 @@ namespace ControlFarm.UI.Provider
 		void DeleteRow(){
 			
 			DialogResult confirmDelete = MessageBox.Show("Deseja Excluir permanentemente o cadastro do fornecedor: "+dtoProv.Name+"?", "Deletar Fornecedor", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button2);
-				if (confirmDelete.ToString().ToUpper() == "YES"){
-				if(dtoProv.IdProvider < 0){
+			if (confirmDelete.ToString().ToUpper() == "YES"){
+				if(dtoProv.IdProvider > 0){
 					bllProv.Delete(dtoProv.IdProvider);
 					MessageBox.Show("Linha de id = "+dtoProv.IdProvider+" excluida");
-					dataGridViewProvider.DataSource = bllProvider.DataGridReturn();
+					dataGridViewProvider.DataSource = bllProv.DataGridReturn();
+					
 				}else{
 					MessageBox.Show("Linha da tabela não pode ser excluida, tente novamente!");
 				}
 			}
+			LoadTable();
 			
 		}
 		void ButtonDeleteClick(object sender, EventArgs e)
@@ -84,10 +89,10 @@ namespace ControlFarm.UI.Provider
 				if(dataGridViewProvider.Rows[e.RowIndex].Cells[0].Value.ToString() != ""){
 					dtoProv.IdProvider = int.Parse(dataGridViewProvider.Rows[e.RowIndex].Cells[0].Value.ToString());
 					dtoProv.Name = dataGridViewProvider.Rows[e.RowIndex].Cells[1].Value.ToString();
-					dtoProv.Cpnj = double.Parse(dataGridViewProvider.Rows[e.RowIndex].Cells[2].Value.ToString());
+					dtoProv.Cpnj = dataGridViewProvider.Rows[e.RowIndex].Cells[2].Value.ToString();
 					dtoProv.Address = dataGridViewProvider.Rows[e.RowIndex].Cells[3].Value.ToString();
 					dtoProv.City = dataGridViewProvider.Rows[e.RowIndex].Cells[4].Value.ToString();
-					dtoProv.Phone = int.Parse(dataGridViewProvider.Rows[e.RowIndex].Cells[5].Value.ToString());
+					dtoProv.Phone = dataGridViewProvider.Rows[e.RowIndex].Cells[5].Value.ToString();
 				}
 				else{
 					dtoProv.IdProvider = -1;
@@ -100,8 +105,7 @@ namespace ControlFarm.UI.Provider
 			DeleteRow();
 		}
 		void NovoToolStripButtonClick(object sender, EventArgs e)
-		{
-			
+		{	
 			RegProvider regProvider = new RegProvider();
 			regProvider.Show();
 		}
@@ -116,7 +120,7 @@ namespace ControlFarm.UI.Provider
 		void ToolStripTextBox1Enter(object sender, EventArgs e)
 		{
 			dtoProv.Name = searchStripTextBox.Text;
-			dataGridViewProvider.DataSource = bllProvider.DataGridReturn(dtoProv);
+			dataGridViewProvider.DataSource = bllProv.DataGridReturn(dtoProv);
 		}
 		void ImprimirToolStripButtonClick(object sender, EventArgs e)
 		{
@@ -143,6 +147,10 @@ namespace ControlFarm.UI.Provider
 		void ReloadStripButtonClick(object sender, EventArgs e)
 		{
 			LoadTable();
+		}
+		void DataGridViewProviderUserDeletedRow(object sender, DataGridViewRowEventArgs e)
+		{
+			DeleteRow();
 		}
 
 	}

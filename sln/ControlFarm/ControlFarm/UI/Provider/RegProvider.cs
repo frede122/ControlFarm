@@ -29,13 +29,23 @@ namespace ControlFarm.UI.Provider
 			if( dtoProvider != null){
 				textBoxAdress.Text = dtoProvider.Address;
 				textBoxCity.Text = dtoProvider.City;
-				textBoxCNPJ.Text = dtoProvider.Cpnj.ToString();
 				textBoxName.Text = dtoProvider.Name;
 				textBoxPhone.Text = dtoProvider.Phone.ToString();
-				textBoxID.Text = dtoProvider.IdProvider.ToString();				
+				textBoxID.Text = dtoProvider.IdProvider.ToString();	
+				if(dtoProvider.Cpnj.ToString().Length > 11){
+					comboBoxCNPJ.Text = "CNPJ";
+					textBoxCPFCNPJ.Mask = "00,000,000/0000-00";
+					textBoxCPFCNPJ.Text = dtoProvider.Cpnj.ToString();
+					labelcnpj.Text = "CNPJ";
+				}else{
+					comboBoxCNPJ.Text = "CPF";
+					textBoxCPFCNPJ.Mask = "000,000,000-00";
+					textBoxCPFCNPJ.Text = dtoProvider.Cpnj.ToString();
+					labelcnpj.Text = "CPF";
+				}
 			}
 			
-			//
+			//textBoxPhone
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
@@ -47,9 +57,9 @@ namespace ControlFarm.UI.Provider
 			dto = new ProviderDTO();
 			dto.Address = textBoxAdress.Text;
 			dto.City = textBoxCity.Text;
-			dto.Cpnj = double.Parse(textBoxCNPJ.Text);
+			dto.Cpnj = textBoxCPFCNPJ.Text;
 			dto.Name = textBoxName.Text;
-			dto.Phone = int.Parse(textBoxPhone.Text);		
+			dto.Phone = textBoxPhone.Text;		
 			if(textBoxID.Text == ""){
 				bll.Save(dto);
 			}else{
@@ -63,5 +73,21 @@ namespace ControlFarm.UI.Provider
 		{
 			this.Close();
 		}
+		void TextBoxCPFCNPJKeyPress(object sender, KeyPressEventArgs e)
+		{
+
+		}
+		void ComboBoxCNPJTextUpdate(object sender, EventArgs e)
+		{
+			if(comboBoxCNPJ.Text == "CNPJ"){
+				textBoxCPFCNPJ.Mask = "00,000,000/0000-00";
+				labelcnpj.Text = "CNPJ";
+			}else{
+				textBoxCPFCNPJ.Mask = "000,000,000-00";
+				labelcnpj.Text = "CPF";
+			}
+			textBoxCPFCNPJ.Text = "";
+		}
+		
 	}
 }

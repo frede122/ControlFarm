@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using Provider.DTO;
 using Provider.BLL;
 using ControlFarm.UI.Provider;
+using ControlFarm.UI.Agr.Inputs;
+
 
 namespace ControlFarm
 {
@@ -22,6 +24,7 @@ namespace ControlFarm
 	public partial class MainForm : Form
 	{
 		ListUpdateProvider provider;
+		ListUpdateAgrInputs agroInput;
 		public MainForm()
 		{
 			//
@@ -51,6 +54,14 @@ namespace ControlFarm
 		void SairToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+		void InsumosToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			agroInput = new ListUpdateAgrInputs();
+			agroInput.MdiParent = this;
+			agroInput.Show();
+			agroInput = null;
+	
 		}
 	}
 }

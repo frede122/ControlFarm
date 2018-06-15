@@ -8,3 +8,8 @@ C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\Co
 C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Agr.Inputs\obj\Debug\Agr.Inputs.csprojResolveAssemblyReference.cache
 C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Agr.Inputs\obj\Debug\Agr.Inputs.dll
 C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Agr.Inputs\obj\Debug\Agr.Inputs.pdb
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\bin\Debug\Conect.dll
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\bin\Debug\MySql.Data.dll
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Agr.Inputs\bin\Debug\Conect.pdb
+C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Agr.Inputs\bin\Debug\Conect.dll
+C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Agr.Inputs\bin\Debug\Conect.pdb

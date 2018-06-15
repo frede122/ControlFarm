@@ -29,8 +29,8 @@ namespace Provider.DTO
 			get{ return name; }
 			set{ name = value; }
 		}
-		private double cnpj;
-		public double Cpnj {
+		private string cnpj;
+		public string Cpnj {
 			get{ return cnpj; }
 			set{ cnpj = value; }			
 		}
@@ -44,8 +44,8 @@ namespace Provider.DTO
 			get{ return city; }
 			set{ city = value; }
 		}
-		private int phone;
-		public int Phone {
+		private string phone;
+		public string Phone {
 			get{ return phone; }
 			set{ phone = value; }
 		}

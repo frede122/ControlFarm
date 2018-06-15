@@ -20,6 +20,7 @@ namespace ControlFarm
 		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem insumosToolStripMenuItem;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -48,6 +49,7 @@ namespace ControlFarm
 			this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.insumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -88,7 +90,8 @@ namespace ControlFarm
 			// cadastroToolStripMenuItem
 			// 
 			this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.funcionarioToolStripMenuItem});
+			this.funcionarioToolStripMenuItem,
+			this.insumosToolStripMenuItem});
 			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
 			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
 			this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -96,9 +99,16 @@ namespace ControlFarm
 			// funcionarioToolStripMenuItem
 			// 
 			this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
-			this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+			this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.funcionarioToolStripMenuItem.Text = "Funcionario";
 			this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.FuncionarioToolStripMenuItemClick);
+			// 
+			// insumosToolStripMenuItem
+			// 
+			this.insumosToolStripMenuItem.Name = "insumosToolStripMenuItem";
+			this.insumosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.insumosToolStripMenuItem.Text = "Insumos";
+			this.insumosToolStripMenuItem.Click += new System.EventHandler(this.InsumosToolStripMenuItemClick);
 			// 
 			// MainForm
 			// 
