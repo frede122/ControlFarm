@@ -13,3 +13,6 @@ C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\Co
 C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Provider\obj\Debug\Provider.csprojResolveAssemblyReference.cache
 C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Provider\obj\Debug\Provider.dll
 C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\Provider\obj\Debug\Provider.pdb
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Provider\obj\Debug\Provider.UCListUpdateProviders.resources
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Provider\obj\Debug\Provider.csproj.GenerateResource.Cache
+C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\Provider\obj\Debug\Provider.UI.RegProvider.resources

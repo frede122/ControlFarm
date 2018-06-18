@@ -42,6 +42,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
@@ -55,16 +56,33 @@
     <Compile Include="DTO\ProviderDTO.cs" />
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\RegProvider.cs" />
+    <Compile Include="UI\RegProvider.Designer.cs">
+      <DependentUpon>RegProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UCListUpdateProviders.cs" />
+    <Compile Include="UI\UCListUpdateProviders.Designer.cs">
+      <DependentUpon>UCListUpdateProviders.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BLL" />
     <Folder Include="DTO" />
+    <Folder Include="UI" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Conect\Conect.csproj">
       <Project>{73251248-eae2-4d02-8f77-993b9f8e3bde}</Project>
       <Name>Conect</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\RegProvider.resx">
+      <DependentUpon>RegProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UCListUpdateProviders.resx">
+      <DependentUpon>UCListUpdateProviders.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,6 +11,8 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using Conect;
 using Agr.Inputs.DTO;
+using System.Collections.Generic;
+
 
 namespace Agr.Inputs.BLL
 {
@@ -70,9 +72,9 @@ namespace Agr.Inputs.BLL
 			ConectDAL dal = new ConectDAL();
 			DataTable da = new DataTable();
 			if(dtonv == null){
-				dal.ComandSql = "SELECT `idFornecedor`,`nome`,`cnpj`,`endereco`,`cidade`,`telefone` FROM `fornecedor`";				
+				dal.ComandSql = "SELECT idInsumos, nome, unid, categoria FROM `verinsumos`";				
 			}else{
-				dal.ComandSql = "SELECT `idFornecedor`,`nome`,`cnpj`,`endereco`,`cidade`,`telefone` FROM `fornecedor` WHERE `nome` LIKE '%"+dtonv.Name+"%'";
+				dal.ComandSql = "SELECT idInsumos, nome, unid, categoria FROM `verinsumos` WHERE `nome` LIKE '%"+dtonv.Name+"%'";
 			}
 			    da = dal.MySqlDA(dal);
 				return da;
@@ -80,7 +82,10 @@ namespace Agr.Inputs.BLL
 		
 		
 		
-		
-		
+
 	}
+	
+
+	
+	
 }

@@ -15,12 +15,15 @@ namespace ControlFarm
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.MenuStrip menuStrip1;
-		private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem insumosToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem conteúdoToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem índiceToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+		private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -44,48 +47,28 @@ namespace ControlFarm
 		private void InitializeComponent()
 		{
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-			this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.insumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.conteúdoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.índiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+			this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.arquivoToolStripMenuItem,
-			this.cadastroToolStripMenuItem});
+			this.cadastroToolStripMenuItem,
+			this.ajudaToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(934, 24);
 			this.menuStrip1.TabIndex = 1;
 			this.menuStrip1.Text = "menuStrip1";
-			// 
-			// arquivoToolStripMenuItem
-			// 
-			this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.abrirToolStripMenuItem,
-			this.sairToolStripMenuItem});
-			this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-			this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-			this.arquivoToolStripMenuItem.Text = "Arquivo";
-			this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.ArquivoToolStripMenuItemClick);
-			// 
-			// abrirToolStripMenuItem
-			// 
-			this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-			this.abrirToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-			this.abrirToolStripMenuItem.Text = "abrir";
-			// 
-			// sairToolStripMenuItem
-			// 
-			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-			this.sairToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-			this.sairToolStripMenuItem.Text = "Sair";
-			this.sairToolStripMenuItem.Click += new System.EventHandler(this.SairToolStripMenuItemClick);
 			// 
 			// cadastroToolStripMenuItem
 			// 
@@ -94,7 +77,7 @@ namespace ControlFarm
 			this.insumosToolStripMenuItem});
 			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
 			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-			this.cadastroToolStripMenuItem.Text = "Cadastro";
+			this.cadastroToolStripMenuItem.Text = "&Cadastro";
 			// 
 			// funcionarioToolStripMenuItem
 			// 
@@ -110,15 +93,56 @@ namespace ControlFarm
 			this.insumosToolStripMenuItem.Text = "Insumos";
 			this.insumosToolStripMenuItem.Click += new System.EventHandler(this.InsumosToolStripMenuItemClick);
 			// 
+			// ajudaToolStripMenuItem
+			// 
+			this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.conteúdoToolStripMenuItem,
+			this.índiceToolStripMenuItem,
+			this.pesquisarToolStripMenuItem,
+			this.toolStripSeparator5,
+			this.sobreToolStripMenuItem});
+			this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+			this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+			this.ajudaToolStripMenuItem.Text = "Aj&uda";
+			// 
+			// conteúdoToolStripMenuItem
+			// 
+			this.conteúdoToolStripMenuItem.Name = "conteúdoToolStripMenuItem";
+			this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.conteúdoToolStripMenuItem.Text = "&Conteúdo";
+			// 
+			// índiceToolStripMenuItem
+			// 
+			this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
+			this.índiceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.índiceToolStripMenuItem.Text = "Í&ndice";
+			// 
+			// pesquisarToolStripMenuItem
+			// 
+			this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
+			this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.pesquisarToolStripMenuItem.Text = "&Pesquisar";
+			// 
+			// toolStripSeparator5
+			// 
+			this.toolStripSeparator5.Name = "toolStripSeparator5";
+			this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
+			// 
+			// sobreToolStripMenuItem
+			// 
+			this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+			this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.sobreToolStripMenuItem.Text = "&Sobre...";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(934, 512);
 			this.Controls.Add(this.menuStrip1);
-			this.IsMdiContainer = true;
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "ControlFarm";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.menuStrip1.ResumeLayout(false);
