@@ -4,10 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # SharpDevelop 5.1
 VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agr.Inputs", "Agr.Inputs\Agr.Inputs.csproj", "{35731374-224B-4037-8AEF-2FFD7A306DBA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Provider", "Provider\Provider.csproj", "{A4CE3658-6CFE-481B-82C1-E5DC2FF310BE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFarm", "ControlFarm\ControlFarm.csproj", "{933E16E0-4BED-4AD9-8CA9-A5C2A2E4714B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conect", "Conect\Conect.csproj", "{73251248-EAE2-4D02-8F77-993B9F8E3BDE}"
@@ -18,14 +14,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{35731374-224B-4037-8AEF-2FFD7A306DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35731374-224B-4037-8AEF-2FFD7A306DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35731374-224B-4037-8AEF-2FFD7A306DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35731374-224B-4037-8AEF-2FFD7A306DBA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A4CE3658-6CFE-481B-82C1-E5DC2FF310BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4CE3658-6CFE-481B-82C1-E5DC2FF310BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4CE3658-6CFE-481B-82C1-E5DC2FF310BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4CE3658-6CFE-481B-82C1-E5DC2FF310BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{933E16E0-4BED-4AD9-8CA9-A5C2A2E4714B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{933E16E0-4BED-4AD9-8CA9-A5C2A2E4714B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{933E16E0-4BED-4AD9-8CA9-A5C2A2E4714B}.Release|Any CPU.ActiveCfg = Release|Any CPU

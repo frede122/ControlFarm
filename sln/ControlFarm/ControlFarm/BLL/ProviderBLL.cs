@@ -79,9 +79,9 @@ namespace Provider.BLL
 			ConectDAL dal = new ConectDAL();
 			DataTable da = new DataTable();
 			if(dtonv == null){
-				dal.ComandSql = "SELECT `idFornecedor`,`nome`,`cnpj`,`endereco`,`cidade`,`telefone` FROM `fornecedor`";				
+				dal.ComandSql = "SELECT `idFornecedor`,`nome`,`cnpj`,`endereco`,`cidade`,`telefone` FROM `fornecedor` ORDER BY idFornecedor DESC LIMIT 50";				
 			}else{
-				dal.ComandSql = "SELECT `idFornecedor`,`nome`,`cnpj`,`endereco`,`cidade`,`telefone` FROM `fornecedor` WHERE `nome` LIKE '%"+dtonv.Name+"%'";
+				dal.ComandSql = "SELECT `idFornecedor`,`nome`,`cnpj`,`endereco`,`cidade`,`telefone` FROM `fornecedor` WHERE `nome` LIKE '%"+dtonv.Name+"%' ORDER BY idFornecedor DESC LIMIT 20 ";
 			}
 			    da = dal.MySqlDA(dal);
 				return da;

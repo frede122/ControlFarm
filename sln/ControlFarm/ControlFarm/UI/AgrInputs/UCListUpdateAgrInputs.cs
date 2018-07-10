@@ -12,6 +12,8 @@ using System.Drawing;
 using System.Windows.Forms;
 using Agr.Inputs.BLL;
 using Agr.Inputs.DTO;
+using ControlFarm;
+
 
 namespace Agr.Inputs.UI
 {
@@ -42,9 +44,10 @@ namespace Agr.Inputs.UI
 			LoadTable();
 			
 		}
-		public UCListUpdateAgrInputs()
+		int c = 0;
+		public UCListUpdateAgrInputs(int i = 0)
 		{
-			
+			c = i;
 			
 			InitializeComponent();
 			LoadTable();
@@ -89,5 +92,7 @@ namespace Agr.Inputs.UI
 			textBoxName.Text = null;
 			comboBoxCat.Text = null;
 		}
+		
+
 	}
 }

@@ -72,9 +72,9 @@ namespace Agr.Inputs.BLL
 			ConectDAL dal = new ConectDAL();
 			DataTable da = new DataTable();
 			if(dtonv == null){
-				dal.ComandSql = "SELECT idInsumos, nome, unid, categoria FROM `verinsumos`";				
+				dal.ComandSql = "SELECT idInsumos, nome, unid, categoria FROM insumos INNER join catinsumos ON insumos.CatInsumos_idCatInsumos = catinsumos.idCatInsumos";				
 			}else{
-				dal.ComandSql = "SELECT idInsumos, nome, unid, categoria FROM `verinsumos` WHERE `nome` LIKE '%"+dtonv.Name+"%'";
+				dal.ComandSql = "SELECT idInsumos, nome, unid, categoria FROM  insumos INNER join catinsumos ON insumos.CatInsumos_idCatInsumos = catinsumos.idCatInsumos WHERE `nome` LIKE '%"+dtonv.Name+"%'";
 			}
 			    da = dal.MySqlDA(dal);
 				return da;

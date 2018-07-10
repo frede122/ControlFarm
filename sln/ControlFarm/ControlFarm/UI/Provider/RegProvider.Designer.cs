@@ -6,7 +6,7 @@
  * 
  * Para alterar este modelo use Ferramentas | Opções | Codificação | Editar Cabeçalhos Padrão.
  */
-namespace ControlFarm.UI.Provider
+namespace Provider.UI
 {
 	partial class RegProvider
 	{

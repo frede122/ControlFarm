@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using Provider.DTO;
 using Provider.BLL;
 
-namespace ControlFarm.UI.Provider
+namespace Provider.UI
 {
 	/// <summary>
 	/// Description of RegProvider.
@@ -26,21 +26,21 @@ namespace ControlFarm.UI.Provider
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			if( dtoProvider != null){
+			if(dtoProvider != null){
 				textBoxAdress.Text = dtoProvider.Address;
 				textBoxCity.Text = dtoProvider.City;
 				textBoxName.Text = dtoProvider.Name;
-				textBoxPhone.Text = dtoProvider.Phone.ToString();
+				textBoxPhone.Text = dtoProvider.Phone;
 				textBoxID.Text = dtoProvider.IdProvider.ToString();	
-				if(dtoProvider.Cpnj.ToString().Length > 11){
+				if(dtoProvider.Cpnj.Length > 11){
 					comboBoxCNPJ.Text = "CNPJ";
 					textBoxCPFCNPJ.Mask = "00,000,000/0000-00";
-					textBoxCPFCNPJ.Text = dtoProvider.Cpnj.ToString();
+					textBoxCPFCNPJ.Text = dtoProvider.Cpnj;
 					labelcnpj.Text = "CNPJ";
 				}else{
 					comboBoxCNPJ.Text = "CPF";
 					textBoxCPFCNPJ.Mask = "000,000,000-00";
-					textBoxCPFCNPJ.Text = dtoProvider.Cpnj.ToString();
+					textBoxCPFCNPJ.Text = dtoProvider.Cpnj;
 					labelcnpj.Text = "CPF";
 				}
 			}

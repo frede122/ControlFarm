@@ -54,16 +54,6 @@ namespace Agr.Inputs.UI
 		private System.Windows.Forms.TabControl tabControlListAgr;
 		private System.Windows.Forms.TabPage tabPageListUpdate;
 		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.ToolStrip toolStrip1;
-		private System.Windows.Forms.ToolStripButton novoToolStripButton;
-		private System.Windows.Forms.ToolStripButton editStripButton;
-		private System.Windows.Forms.ToolStripButton deleteStripButton;
-		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-		private System.Windows.Forms.ToolStripButton reloadStripButton;
-		private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-		private System.Windows.Forms.ToolStripButton imprimirToolStripButton;
-		private System.Windows.Forms.ToolStripTextBox searchStripTextBox;
-		private System.Windows.Forms.ToolStripLabel toolStripLabel1;
 		private System.Windows.Forms.TextBox textBoxName;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Button buttonClear;
@@ -76,6 +66,24 @@ namespace Agr.Inputs.UI
 		private System.Windows.Forms.TextBox textBoxId;
 		private System.Windows.Forms.TextBox textBoxU;
 		private System.Windows.Forms.ComboBox comboBoxCat;
+		private System.Windows.Forms.BindingNavigator bindingNavigator1;
+		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+		private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+		private System.Windows.Forms.ToolStripButton toolStripButton1;
+		private System.Windows.Forms.ToolStripButton toolStripButton2;
+		private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+		private System.Windows.Forms.ToolStripButton toolStripButton3;
+		private System.Windows.Forms.ToolStripButton toolStripButton5;
+		private System.Windows.Forms.ToolStripButton toolStripButton4;
+		private System.Windows.Forms.ToolStripButton editStripButton;
 		
 		/// <summary>
 		/// Disposes resources used by the control.
@@ -98,20 +106,29 @@ namespace Agr.Inputs.UI
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCListUpdateAgrInputs));
 			this.tabControlListAgr = new System.Windows.Forms.TabControl();
 			this.tabPageListUpdate = new System.Windows.Forms.TabPage();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-			this.novoToolStripButton = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
 			this.editStripButton = new System.Windows.Forms.ToolStripButton();
-			this.deleteStripButton = new System.Windows.Forms.ToolStripButton();
-			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.reloadStripButton = new System.Windows.Forms.ToolStripButton();
-			this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-			this.imprimirToolStripButton = new System.Windows.Forms.ToolStripButton();
-			this.searchStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+			this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+			this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -167,7 +184,8 @@ namespace Agr.Inputs.UI
 			this.splitContainer1.Panel1.SuspendLayout();
 			this.splitContainer1.Panel2.SuspendLayout();
 			this.splitContainer1.SuspendLayout();
-			this.toolStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+			this.bindingNavigator1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
 			this.splitContainer2.Panel1.SuspendLayout();
@@ -187,7 +205,7 @@ namespace Agr.Inputs.UI
 			this.tabControlListAgr.Multiline = true;
 			this.tabControlListAgr.Name = "tabControlListAgr";
 			this.tabControlListAgr.SelectedIndex = 0;
-			this.tabControlListAgr.Size = new System.Drawing.Size(1360, 1280);
+			this.tabControlListAgr.Size = new System.Drawing.Size(1280, 880);
 			this.tabControlListAgr.TabIndex = 0;
 			// 
 			// tabPageListUpdate
@@ -197,7 +215,7 @@ namespace Agr.Inputs.UI
 			this.tabPageListUpdate.Location = new System.Drawing.Point(23, 4);
 			this.tabPageListUpdate.Name = "tabPageListUpdate";
 			this.tabPageListUpdate.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPageListUpdate.Size = new System.Drawing.Size(1333, 1272);
+			this.tabPageListUpdate.Size = new System.Drawing.Size(1253, 872);
 			this.tabPageListUpdate.TabIndex = 0;
 			this.tabPageListUpdate.Text = "Insumos";
 			this.tabPageListUpdate.UseVisualStyleBackColor = true;
@@ -211,7 +229,7 @@ namespace Agr.Inputs.UI
 			// 
 			// splitContainer1.Panel1
 			// 
-			this.splitContainer1.Panel1.Controls.Add(this.toolStrip1);
+			this.splitContainer1.Panel1.Controls.Add(this.bindingNavigator1);
 			this.splitContainer1.Panel1.Controls.Add(this.menuStrip1);
 			this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			// 
@@ -220,98 +238,175 @@ namespace Agr.Inputs.UI
 			this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
 			this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2Paint);
-			this.splitContainer1.Size = new System.Drawing.Size(1327, 1266);
-			this.splitContainer1.SplitterDistance = 55;
+			this.splitContainer1.Size = new System.Drawing.Size(1247, 866);
+			this.splitContainer1.SplitterDistance = 54;
 			this.splitContainer1.TabIndex = 8;
 			// 
-			// toolStrip1
+			// bindingNavigator1
 			// 
-			this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-			this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.novoToolStripButton,
+			this.bindingNavigator1.AddNewItem = null;
+			this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
+			this.bindingNavigator1.DeleteItem = null;
+			this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.toolStripButton3,
 			this.editStripButton,
-			this.deleteStripButton,
-			this.toolStripSeparator1,
-			this.reloadStripButton,
-			this.toolStripSeparator,
-			this.imprimirToolStripButton,
-			this.searchStripTextBox,
-			this.toolStripLabel1});
-			this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-			this.toolStrip1.Size = new System.Drawing.Size(730, 27);
-			this.toolStrip1.TabIndex = 9;
-			this.toolStrip1.Text = "toolStrip1";
+			this.toolStripButton5,
+			this.toolStripButton4,
+			this.toolStripButton1,
+			this.toolStripButton2,
+			this.bindingNavigatorMoveFirstItem,
+			this.bindingNavigatorMovePreviousItem,
+			this.bindingNavigatorSeparator,
+			this.bindingNavigatorPositionItem,
+			this.bindingNavigatorCountItem,
+			this.bindingNavigatorSeparator1,
+			this.bindingNavigatorMoveNextItem,
+			this.bindingNavigatorMoveLastItem,
+			this.bindingNavigatorSeparator2,
+			this.toolStripTextBox1,
+			this.toolStripLabel2});
+			this.bindingNavigator1.Location = new System.Drawing.Point(0, 24);
+			this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+			this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
+			this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
+			this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+			this.bindingNavigator1.Name = "bindingNavigator1";
+			this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
+			this.bindingNavigator1.Size = new System.Drawing.Size(1247, 30);
+			this.bindingNavigator1.TabIndex = 10;
+			this.bindingNavigator1.Text = "bindingNavigator1";
 			// 
-			// novoToolStripButton
+			// bindingNavigatorCountItem
 			// 
-			this.novoToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripButton.Image")));
-			this.novoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.novoToolStripButton.Name = "novoToolStripButton";
-			this.novoToolStripButton.Size = new System.Drawing.Size(60, 24);
-			this.novoToolStripButton.Text = "&Novo";
-			this.novoToolStripButton.Click += new System.EventHandler(this.NovoToolStripButtonClick);
+			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 27);
+			this.bindingNavigatorCountItem.Text = "of {0}";
+			this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+			// 
+			// toolStripButton3
+			// 
+			this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+			this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton3.Name = "toolStripButton3";
+			this.toolStripButton3.Size = new System.Drawing.Size(56, 27);
+			this.toolStripButton3.Text = "&Novo";
 			// 
 			// editStripButton
 			// 
 			this.editStripButton.Image = ((System.Drawing.Image)(resources.GetObject("editStripButton.Image")));
 			this.editStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.editStripButton.Name = "editStripButton";
-			this.editStripButton.Size = new System.Drawing.Size(99, 24);
+			this.editStripButton.Size = new System.Drawing.Size(94, 27);
 			this.editStripButton.Tag = "";
 			this.editStripButton.Text = "Editar Tabela";
-			this.editStripButton.Click += new System.EventHandler(this.EditStripButtonClick);
 			// 
-			// deleteStripButton
+			// toolStripButton5
 			// 
-			this.deleteStripButton.Image = ((System.Drawing.Image)(resources.GetObject("deleteStripButton.Image")));
-			this.deleteStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.deleteStripButton.Name = "deleteStripButton";
-			this.deleteStripButton.Size = new System.Drawing.Size(65, 24);
-			this.deleteStripButton.Text = "Excluir";
+			this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+			this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton5.Name = "toolStripButton5";
+			this.toolStripButton5.Size = new System.Drawing.Size(58, 27);
+			this.toolStripButton5.Text = "&Salvar";
 			// 
-			// toolStripSeparator1
+			// toolStripButton4
 			// 
-			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+			this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+			this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton4.Name = "toolStripButton4";
+			this.toolStripButton4.Size = new System.Drawing.Size(61, 27);
+			this.toolStripButton4.Text = "Excluir";
 			// 
-			// reloadStripButton
+			// toolStripButton1
 			// 
-			this.reloadStripButton.Image = ((System.Drawing.Image)(resources.GetObject("reloadStripButton.Image")));
-			this.reloadStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.reloadStripButton.Name = "reloadStripButton";
-			this.reloadStripButton.Size = new System.Drawing.Size(87, 24);
-			this.reloadStripButton.Text = "Recarregar";
+			this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+			this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton1.Name = "toolStripButton1";
+			this.toolStripButton1.Size = new System.Drawing.Size(83, 27);
+			this.toolStripButton1.Text = "Recarregar";
 			// 
-			// toolStripSeparator
+			// toolStripButton2
 			// 
-			this.toolStripSeparator.Name = "toolStripSeparator";
-			this.toolStripSeparator.Size = new System.Drawing.Size(6, 27);
+			this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+			this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton2.Name = "toolStripButton2";
+			this.toolStripButton2.Size = new System.Drawing.Size(73, 27);
+			this.toolStripButton2.Text = "&Imprimir";
 			// 
-			// imprimirToolStripButton
+			// bindingNavigatorMoveFirstItem
 			// 
-			this.imprimirToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripButton.Image")));
-			this.imprimirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.imprimirToolStripButton.Name = "imprimirToolStripButton";
-			this.imprimirToolStripButton.Size = new System.Drawing.Size(77, 24);
-			this.imprimirToolStripButton.Text = "&Imprimir";
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 27);
+			this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
 			// 
-			// searchStripTextBox
+			// bindingNavigatorMovePreviousItem
 			// 
-			this.searchStripTextBox.BackColor = System.Drawing.SystemColors.HighlightText;
-			this.searchStripTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.searchStripTextBox.Margin = new System.Windows.Forms.Padding(60, 0, 1, 0);
-			this.searchStripTextBox.Name = "searchStripTextBox";
-			this.searchStripTextBox.Size = new System.Drawing.Size(200, 27);
-			this.searchStripTextBox.Tag = "";
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 27);
+			this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
 			// 
-			// toolStripLabel1
+			// bindingNavigatorSeparator
 			// 
-			this.toolStripLabel1.Name = "toolStripLabel1";
-			this.toolStripLabel1.Size = new System.Drawing.Size(57, 24);
-			this.toolStripLabel1.Text = "Pesquisar";
+			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+			this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 30);
+			// 
+			// bindingNavigatorPositionItem
+			// 
+			this.bindingNavigatorPositionItem.AccessibleName = "Posição";
+			this.bindingNavigatorPositionItem.AutoSize = false;
+			this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+			this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+			this.bindingNavigatorPositionItem.Text = "0";
+			this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
+			// 
+			// bindingNavigatorSeparator1
+			// 
+			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 30);
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 27);
+			this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 27);
+			this.bindingNavigatorMoveLastItem.Text = "Mover último";
+			// 
+			// bindingNavigatorSeparator2
+			// 
+			this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+			this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 30);
+			// 
+			// toolStripTextBox1
+			// 
+			this.toolStripTextBox1.BackColor = System.Drawing.SystemColors.HighlightText;
+			this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.toolStripTextBox1.Margin = new System.Windows.Forms.Padding(60, 0, 1, 0);
+			this.toolStripTextBox1.Name = "toolStripTextBox1";
+			this.toolStripTextBox1.Size = new System.Drawing.Size(200, 30);
+			this.toolStripTextBox1.Tag = "";
+			// 
+			// toolStripLabel2
+			// 
+			this.toolStripLabel2.Name = "toolStripLabel2";
+			this.toolStripLabel2.Size = new System.Drawing.Size(57, 27);
+			this.toolStripLabel2.Text = "Pesquisar";
 			// 
 			// menuStrip1
 			// 
@@ -322,7 +417,7 @@ namespace Agr.Inputs.UI
 			this.ajudaToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(1327, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(1247, 24);
 			this.menuStrip1.TabIndex = 8;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -574,8 +669,8 @@ namespace Agr.Inputs.UI
 			// 
 			this.splitContainer2.Panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
 			this.splitContainer2.Panel2.Controls.Add(this.dataGridViewAgrInputs);
-			this.splitContainer2.Size = new System.Drawing.Size(1327, 1207);
-			this.splitContainer2.SplitterDistance = 418;
+			this.splitContainer2.Size = new System.Drawing.Size(1247, 808);
+			this.splitContainer2.SplitterDistance = 502;
 			this.splitContainer2.TabIndex = 1;
 			// 
 			// label5
@@ -699,7 +794,7 @@ namespace Agr.Inputs.UI
 			this.dataGridViewAgrInputs.Location = new System.Drawing.Point(0, 0);
 			this.dataGridViewAgrInputs.Name = "dataGridViewAgrInputs";
 			this.dataGridViewAgrInputs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.dataGridViewAgrInputs.Size = new System.Drawing.Size(905, 1207);
+			this.dataGridViewAgrInputs.Size = new System.Drawing.Size(741, 808);
 			this.dataGridViewAgrInputs.TabIndex = 10;
 			this.dataGridViewAgrInputs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewAgrInputsCellContentClick);
 			// 
@@ -717,7 +812,7 @@ namespace Agr.Inputs.UI
 			this.tabPage2.Location = new System.Drawing.Point(23, 4);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(1333, 1272);
+			this.tabPage2.Size = new System.Drawing.Size(1253, 872);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Categorias ";
 			this.tabPage2.UseVisualStyleBackColor = true;
@@ -744,8 +839,9 @@ namespace Agr.Inputs.UI
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.tabControlListAgr);
+			this.Margin = new System.Windows.Forms.Padding(0);
 			this.Name = "UCListUpdateAgrInputs";
-			this.Size = new System.Drawing.Size(1360, 1280);
+			this.Size = new System.Drawing.Size(1280, 880);
 			this.tabControlListAgr.ResumeLayout(false);
 			this.tabPageListUpdate.ResumeLayout(false);
 			this.splitContainer1.Panel1.ResumeLayout(false);
@@ -753,8 +849,9 @@ namespace Agr.Inputs.UI
 			this.splitContainer1.Panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
 			this.splitContainer1.ResumeLayout(false);
-			this.toolStrip1.ResumeLayout(false);
-			this.toolStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+			this.bindingNavigator1.ResumeLayout(false);
+			this.bindingNavigator1.PerformLayout();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.splitContainer2.Panel1.ResumeLayout(false);

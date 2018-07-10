@@ -49,3 +49,46 @@ C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln
 C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Xml.dll
 C:\Users\FredePaula\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Xml.Linq.dll
 C:\Users\Arizona\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\SLN\ControlFarm\ControlFarm\obj\Debug\ControlFarm.UI.Agr.Inputs.ListUpdateAgrInputs.resources
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\ControlFarm.exe.config
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\ControlFarm.exe
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\ControlFarm.pdb
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\Conect.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\Microsoft.CSharp.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Data.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Drawing.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Windows.Forms.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Xml.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\System.Xml.Linq.dll
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\bin\Debug\Conect.pdb
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\ControlFarm.csprojResolveAssemblyReference.cache
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\ControlFarm.MainForm.resources
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\ControlFarm.csproj.GenerateResource.Cache
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\ControlFarm.exe
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\ControlFarm.pdb
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\ControlFarm.csprojResolveAssemblyReference.cache
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\ControlFarm.MainForm.resources
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\Agr.Inputs.UI.UCListUpdateAgrInputs.resources
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\Provider.UI.RegProvider.resources
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\Provider.UCListUpdateProviders.resources
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\ControlFarm.csproj.GenerateResource.Cache
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\ControlFarm.exe
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\obj\Debug\ControlFarm.pdb
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\ControlFarm.exe.config
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\ControlFarm.exe
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\ControlFarm.pdb
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\Conect.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\Microsoft.CSharp.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\MySql.Data.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\System.Data.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\System.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\System.Drawing.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\System.Windows.Forms.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\System.Xml.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\System.Xml.Linq.dll
+C:\Users\Frede\Desktop\ControlFarm\ControlFarm\bin\Debug\Conect.pdb
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\Agr.Inputs.UI.UCListUpdateAgrInputs.resources
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\Provider.UI.RegProvider.resources
+C:\Users\Frede\Dropbox\Trabalho\Projeto Controle de Fazenda\ControlFarm\sln\ControlFarm\ControlFarm\obj\Debug\Provider.UCListUpdateProviders.resources

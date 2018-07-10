@@ -54,7 +54,6 @@ namespace Conect
 		
 		public void Write(ConectDAL ConectDAL){
 			try {
-				//this.Conect(ConectDAL);
 				
 				comand = new MySqlCommand(ConectDAL.ComandSql);
 				comand.Connection = conectionMysql;	
